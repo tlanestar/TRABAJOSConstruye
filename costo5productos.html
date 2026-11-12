@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloss.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        
+let producto = 1;
+let precio;
+let total = 0;
+
+do {
+    precio = producto * 15;
+
+    document.write("Producto " + producto + ": $" + precio + "<br>");
+
+    total = total + precio;
+    producto++;
+
+} while (producto <= 5);
+
+document.write("Total a pagar: $" + total);
+    </script>
+</body>
+</html>

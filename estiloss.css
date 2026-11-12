@@ -1,0 +1,254 @@
+/* DISEÑO GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5fa;
+    color: #55536b;
+    min-height: 100vh;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(120deg, #f8d9e8, #d5eafa);
+    padding: 45px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #bd789d;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: #657e9b;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.bienvenida h2 {
+    color: #719fc9;
+    margin-bottom: 15px;
+}
+
+/* NAVEGACIÓN */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #665477;
+    background: #f4d9e8;
+    padding: 13px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* CONTENEDOR DE TRABAJOS */
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 20px auto 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* TARJETAS */
+.boton {
+    min-height: 120px;
+    padding: 25px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+    color: #55516b;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 18px;
+    border: 2px solid white;
+
+    box-shadow: 0 5px 15px #b8a5bd35;
+
+    transition: 0.3s;
+}
+
+/* ROSA */
+.rosa {
+    background: #f8dce9;
+}
+
+/* AZUL */
+.azul {
+    background: #d9edfc;
+}
+
+/* EFECTOS */
+.boton:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px #a99ab544;
+    border-color: #e9c4dd;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #dceafa;
+    color: #657e9b;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 500px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
+
+/* ===== DISEÑO DE LOS EJERCICIOS ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fce7f0, #e4f3ff);
+    color: #55516b;
+    padding: 30px;
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    color: #cf75a2;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #679bc9;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* TARJETA PRINCIPAL */
+.contenido {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #b9a5c655;
+    border-top: 7px solid #e9b5d0;
+}
+
+/* RESULTADOS */
+.resultado {
+    background: #fceaf2;
+    border-left: 6px solid #d98bb5;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 18px 0;
+    color: #76516a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* SUBTITULOS */
+.resultado h3 {
+    color: #659ac7;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+/* TEXTO */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+/* BOTONES */
+button {
+    background: #d99abb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background: #86b9df;
+}
+
+/* BOTONES DE REGRESAR */
+.regresar {
+    display: inline-block;
+    background: #b8d9f1;
+    color: #405d7a;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.regresar:hover {
+    background: #e9b5d0;
+    color: white;
+}
+
+/* RESULTADO IMPORTANTE */
+strong {
+    color: #c76d9d;
+    font-weight: bold;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .contenido {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}

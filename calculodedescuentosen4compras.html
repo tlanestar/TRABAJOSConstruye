@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="estiloss.css">
+     <title>Document</title>
+</head>
+<body>
+    <script>
+        let compra = 1;
+let precio = 200;
+let descuento;
+let total;
+
+do {
+    descuento = precio * 0.10;
+    total = precio - descuento;
+
+    document.write("Compra: " + compra + "<br>");
+    document.write("Precio: $" + precio + "<br>");
+    document.write("Descuento: $" + descuento + "<br>");
+    document.write("Total: $" + total + "<br><br>");
+
+    precio = precio + 100;
+    compra++;
+
+} while (compra <= 4);
+    </script>
+</body>
+</html>
